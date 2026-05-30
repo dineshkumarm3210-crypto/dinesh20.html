@@ -24,16 +24,34 @@
             padding: 20px;
         }
 
-        /* Container Card */
-        .container {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-        }
+       /* Container Card */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* New Block: Added to align buttons side-by-side */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.button-group button, .button-group .btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
         h1 {
             color: #2c3e50;
@@ -106,10 +124,10 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Frontend Roadmap</h1>
-        <p>Learn JavaScript thoroughly before starting React web pages!</p>
-
+   <div class="button-container">
+    <button class="btn-js">Learn JS</button>
+    <button class="btn-react">Learn React</button>
+</div>
         <!-- Properly aligned button section -->
         <div class="button-group">
             <button class="btn btn-primary" onclick="showMessage('JavaScript')">Learn JS</button>
